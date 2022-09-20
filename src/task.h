@@ -1,5 +1,6 @@
 #ifndef TASK_H
 #define TASK_H
+#include <event2/event.h>
 
 class Task {
 public:
@@ -23,7 +24,7 @@ public:
     }
 
     // event_base get()/set()方法
-    event_base *get_base() {
+    struct event_base *get_base() {
         return base;
     }
     void set_base(event_base *base) {

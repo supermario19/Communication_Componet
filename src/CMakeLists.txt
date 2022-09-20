@@ -17,5 +17,5 @@ set(CMAKE_INSTALL_PREFIX "../")
 install(TARGETS Communication_Component
         LIBRARY DESTINATION lib)
 
-install(FILES task.h thread_pool.h thread.h
+install(FILES task.h thread_pool.h thread.h server_task.h
         DESTINATION include)

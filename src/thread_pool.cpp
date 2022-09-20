@@ -20,7 +20,7 @@ void ThreadPool::init(int thread_count) {
         t->set_thread_id(i + 1);
         t->start();
         threads.push_back(t);
-        usleep(10);
+        this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 }
 

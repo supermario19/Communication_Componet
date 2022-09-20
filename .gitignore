@@ -3,3 +3,4 @@
 
 #忽略测试构建目录
 /test/test_thread_pool/build
+/test/test_server_task/build

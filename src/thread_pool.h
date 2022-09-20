@@ -20,9 +20,9 @@ public:
     // 任务分发
     void dispatch(Task *task);
 
-private:
     // 构造
     ThreadPool() = default;
+
     // 析构
     ~ThreadPool() = default;
 private:
